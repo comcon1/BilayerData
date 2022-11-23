@@ -1,25 +1,31 @@
-DOI: 10.5281/zenodo.6778175
+DOI: 10.5281/zenodo.6823087
 SOFTWARE: gromacs
 TRJ:
-- - run_sdpe_sdg_lipid17-0to2100ns.xtc
+- - run_pope_sdg_chol_lipid17_0-1us.xtc
 TPR:
-- - run_sdpe_sdg_lipid17.tpr
+- - run_pope_sdg_chol_lipid17.tpr
 PREEQTIME: 20
 TIMELEFTOUT: 100
 UNITEDATOM_DICT: null
 COMPOSITION:
-  SDPE:
-    NAME: SDPE
-    MAPPING: mappingSDPElipid17_2.yaml
+  POPE:
+    NAME: PE
+    MAPPING: mappingPOPElipid17.yaml
     COUNT:
-    - 58
-    - 58
+    - 37
+    - 37
   SDG:
     NAME: SDG
     MAPPING: mappingSDGlipid17.yaml
     COUNT:
     - 6
     - 6
+  CHOL:
+    NAME: CHL
+    MAPPING: mappingCHOLESTEROLlipid14.yaml
+    COUNT:
+    - 21
+    - 21
   SOL:
     NAME: SOL
     MAPPING: mappingTIP3Pwater.yaml
@@ -27,22 +33,18 @@ COMPOSITION:
 DIR_WRK: /media/osollila/Data1/tmp/DATABANK/
 PUBLICATION: doi.org/10.1016/j.bbamem.2022.183961
 AUTHORS_CONTACT: Saara Lautala and Suvi Heinonen
-SYSTEM: 9.4%SDGinSDPEwithLipid17
-SOFTWARE_VERSION: 18.6
+SYSTEM: DOGandCHOLinSDPEwithLipid17
+SOFTWARE_VERSION: 18.7
 FF: Lipid17
 FF_SOURCE: Amber tools
 FF_DATE: 2019
-TRAJECTORY_SIZE: 14011709460
-TRJLENGTH: 2100020.0
+TRAJECTORY_SIZE: 6105065604
+TRJLENGTH: 1000020.0
 TEMPERATURE: 310.0
-NUMBER_OF_ATOMS: 36068
-DATEOFRUNNING: 19/08/2022
+NUMBER_OF_ATOMS: 32998
+DATEOFRUNNING: 15/11/2022
 TYPEOFSYSTEM: lipid bilayer
 WARNINGS:
-  AMBIGUOUS_ATOMNAMES: [SDPE, SDG]
-EXPERIMENT:
-  ORDERPARAMETER:
-    POPE: {}
-    DOG: {}
-  FORMFACTOR: {}
-ID: 423
+  AMBIGUOUS_ATOMNAMES:
+  - SDG
+ID: 719
