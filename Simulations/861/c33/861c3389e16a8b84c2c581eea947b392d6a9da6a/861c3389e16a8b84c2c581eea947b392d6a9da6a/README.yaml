@@ -4,7 +4,7 @@ TRJ:
 - - wrapped_full.xtc
 PDB:
 - - step2_charmm2omm.pdb
-PDB:
+PSF:
 - - step2_charmm2omm.psf
 PREEQTIME: 100
 TIMELEFTOUT: 100
