@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 
-import os
-
-from fairmd.lipids import FMDL_SIMU_PATH, FMDL_MOL_PATH
-from fairmd.lipids.api import get_OP
-from fairmd.lipids.core import initialize_databank
-from fairmd.lipids.auxiliary import CompactJSONEncoder
-
-from pprint import pprint
 import json
-import yaml
+import os
+from pprint import pprint
 
+import yaml
+from fairmd.lipids import FMDL_MOL_PATH, FMDL_SIMU_PATH, FMDL_EXP_PATH
+from fairmd.lipids.api import get_OP
+from fairmd.lipids.auxiliary import CompactJSONEncoder
+from fairmd.lipids.core import initialize_databank
+from fairmd.lipids.experiment import ExperimentCollection
 
 lname = "CHOL"
 xchg = os.path.join(
@@ -51,5 +50,27 @@ def change_simulations():
         with open(opnm, 'w') as fd:
             json.dump(new_opdata, fd, cls=CompactJSONEncoder)
 
+def change_experiments():
+    ee = ExperimentCollection.load_from_data("OPExperiment")
+    for e in ee:
+        if lname not in e.lipids:
+            continue
+        try:
+            opdata = e.data[lname]
+        except KeyError:
+            # this experiment contains two lipids but doesn't have OP data for <lname>
+            continue
+        print(e)
 
+        opnm = os.path.join(
+            FMDL_EXP_PATH,
+            e.path,
+            lname+"_OrderParameters.json"
+        )
+
+        new_opdata = apply_xchg(opdata, xc_dic)
+        with open(opnm, 'w') as fd:
+            json.dump(new_opdata, fd, cls=CompactJSONEncoder)
+
+change_experiments()
 
