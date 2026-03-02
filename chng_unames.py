@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import glob
 import json
 import os
 from pprint import pprint
@@ -72,5 +73,19 @@ def change_experiments():
         with open(opnm, 'w') as fd:
             json.dump(new_opdata, fd, cls=CompactJSONEncoder)
 
-change_experiments()
+def change_mappings():
+    files = glob.glob(os.path.join(FMDL_MOL_PATH, "membrane", lname, "mapping*.yaml"))
+
+    for fnm in files:
+        print(fnm)
+        with open(fnm, 'r') as fd:
+            mapping = yaml.load(fd, Loader=yaml.SafeLoader)
+        new_mapping = {}
+        for k, v in mapping.items():
+            new_k = xc_dic[k]
+            new_mapping[new_k] = v
+        with open(fnm, 'w') as fd:
+            yaml.dump(new_mapping, fd, sort_keys=False)
+
+change_mappings()
 
