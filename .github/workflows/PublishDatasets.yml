@@ -72,7 +72,8 @@ jobs:
             id_no: .info.datasetId,
             title: .info.datasetSlug,
             subtitle: (.info.subtitle // ""),
-            description: (.info.description // "")
+            description: (.info.description // ""),
+            keywords: .info.keywords
           }' dataset-metadata.json > tmp.json
           mv tmp.json dataset-metadata.json
 
