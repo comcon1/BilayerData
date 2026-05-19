@@ -89,7 +89,7 @@ jobs:
         run: |
           set -e
           cd dataset
-          python ${DATABANK_ROOT}/developer/gen-op-dataset.py --sims
+          python ${DATABANK_ROOT}/developer/gen-op-dataset.py ${SCRIPT_ARGS}
           cd ..
           kaggle datasets version -p ./dataset -m "Dataset auto-release from ${SHORT_SHA}"
 
