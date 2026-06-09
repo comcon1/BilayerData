@@ -18,4 +18,5 @@ bioschema_properties:
   name: 1-stearoyl-2-docosahexaenoyl-sn-glycero-3-phosphocholine
   alternateName:
   - PC(18:0/22:6)
+  - PC 18:0/22:6(4Z,7Z,10Z,13Z,16Z,19Z)  
   image: https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=24778876&t=l
