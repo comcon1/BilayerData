@@ -18,7 +18,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' ||
       (github.event.pull_request.merged &&
       github.event.pull_request.head.repo.full_name == 'NMRLipids/UserData'  &&
-      github.repository == 'NMRLipids/BilayerData')
+      github.repository == 'comcon1/BilayerData')
     runs-on: ubuntu-latest
     container:
       image: nmrlipids/core

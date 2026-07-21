@@ -16,7 +16,7 @@ on:
 
 jobs:
   gen_op_dataseta:
-    if: github.repository == 'NMRLipids/BilayerData'
+    if: github.repository == 'comcon1/BilayerData'
     runs-on: ubuntu-latest
     env:
       SCRIPT_ARGS: >-

@@ -9,7 +9,7 @@ on:
 
 jobs:
     Validate_Databank:
-        if: github.repository == 'NMRLipids/BilayerData' 
+        if: github.repository == 'comcon1/BilayerData' 
         runs-on: ubuntu-latest
         container:
             image: nmrlipids/core

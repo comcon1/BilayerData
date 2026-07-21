@@ -12,7 +12,7 @@
 #     dispatch the `update_db.yml` workflow on its `main` branch.
 #
 # This workflow is intentionally written to be as fail-safe as possible:
-#   * it only runs on the canonical repository (NMRLipids/BilayerData);
+#   * it only runs on the canonical repository (comcon1/BilayerData);
 #   * it has a short timeout so it cannot hang a runner;
 #   * it concurrency-collapses queued runs so only the latest commit triggers
 #     a deploy;
@@ -44,7 +44,7 @@ jobs:
   trigger-db-update:
     name: Dispatch update_db.yml in BilayerUI_laravel
     runs-on: ubuntu-latest
-    if: github.repository == 'NMRLipids/BilayerData'
+    if: github.repository == 'comcon1/BilayerData'
     timeout-minutes: 5
     env:
       TARGET_OWNER: NMRLipids

@@ -23,13 +23,13 @@ jobs:
   UpdateIDs:
     # This job will run if either: workflow_dispatch OR:
     # Pull request is merged AND
-    # The repository is NMRLipids/BilayerData AND
+    # The repository is comcon1/BilayerData AND
     # The pull request is not labeled with "UpdateID" 
     if: ${{ 
        (github.event_name == 'workflow_dispatch' ||
 
        (github.event.pull_request.merged == true &&
-        github.repository == 'NMRLipids/BilayerData' &&
+        github.repository == 'comcon1/BilayerData' &&
         ! contains(github.event.pull_request.labels.*.name, 'UpdateID')
       )) 
         }}

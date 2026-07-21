@@ -9,7 +9,7 @@ on:
       - 'UserData/**'
 jobs:
   ValidateInfoFile:
-    if: "${{ github.event.pull_request.head.repo.full_name == 'NMRlipids/UserData' && github.repository == 'NMRlipids/BilayerData' }}"
+    if: "${{ github.event.pull_request.head.repo.full_name == 'NMRlipids/UserData' && github.repository == 'comcon1/BilayerData' }}"
     runs-on: ubuntu-latest
     container:
       image: nmrlipids/core
