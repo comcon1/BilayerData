@@ -10,7 +10,7 @@ name: UpdateIDs
 on:
   # Triggers the workflow on closed pull request events, but only for the "main" branch 
   pull_request_target:
-    types: 
+    types:
       - closed
     branches: [ "main" ]
     paths: ['Simulations/**']

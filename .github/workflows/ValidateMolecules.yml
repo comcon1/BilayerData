@@ -1,14 +1,17 @@
-name: Validate Molecules
+name: Validate Databank Integrity
+
 permissions:
-  contents: read
+    contents: read
 
 on:
-  pull_request:
-      branches: main
-      paths: Molecules/**
+    pull_request:
+        paths: 
+          - 'Molecules/**'
+          - 'Simulations/**'
+          - 'experiments/**'
 
 jobs:
-    Validate_Databank:
+    Validate_Integrity:
         if: github.repository == 'comcon1/BilayerData' 
         runs-on: ubuntu-latest
         container:
@@ -36,7 +39,7 @@ jobs:
             run: |
                pip install .
 
-          - name: Validate
+          - name: Validate Integrity
             working-directory: "Databank"
             run: |
               python developer/validate_data.py
