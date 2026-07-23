@@ -41,6 +41,7 @@ jobs:
 
           - name: Validate Integrity
             working-directory: "Databank"
+            shell: bash --noprofile --norc {0}
             run: |
               out="$(
                   python developer/validate_data.py
