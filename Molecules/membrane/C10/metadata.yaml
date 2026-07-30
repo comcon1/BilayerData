@@ -1,7 +1,8 @@
 NMRlipids:
-  id: C10
+  idb: C10
   name: n-Decane
   charge: 0
+  id: C10
 sameAs:
   pubchem.compound: 8222
   ChEBI: CHEBI:41808
