@@ -2,3 +2,5 @@ NMRlipids:
   id: TEST
   name: n-Decane
   charge: 0
+bioschema_properties:
+  inChIKey: DIOQZVSQGTUSAI-UHFFFAOYSA-N
