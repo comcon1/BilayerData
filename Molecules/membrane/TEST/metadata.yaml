@@ -4,3 +4,143 @@ NMRlipids:
   charge: 0
 bioschema_properties:
   inChIKey: DIOQZVSQGTUSAI-UHFFFAOYSA-N
+  name: decane
+  iupacName: decane
+  molecularFormula: C10H22
+  molecularWeight: 142.28
+  inChI: InChI=1S/C10H22/c1-3-5-7-9-10-8-6-4-2/h3-10H2,1-2H3
+  smiles: CCCCCCCCCC
+  image: https://lipidmaps.org/api/molecules/LMFA11000568/svg
+  imageAttribution:
+    creditText: '"TEST structure depiction" by LIPID MAPS® is licensed under CC BY
+      4.0 (https://creativecommons.org/licenses/by/4.0/). Source: https://www.lipidmaps.org/databases/lmsd/LMFA11000568'
+    license:
+      spdx: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: https://creativecommons.org/licenses/by/4.0/
+    source:
+      name: LIPID MAPS®
+      url: https://www.lipidmaps.org/
+      sameAs: https://www.lipidmaps.org/databases/lmsd/LMFA11000568
+  alternateName:
+  - DECANE
+  - n-Decane
+  - 124-18-5
+  - Decyl hydride
+  - DTXSID6024913
+  - SYNTSOL LP 10
+  - NK85062OIY
+  - NSC-8781
+  - CACTUS NORMAL PARAFFIN N 10
+  - DTXCID704913
+  - CHEBI:41808
+  - RefChem:585364
+  - 204-686-4
+  - 682-389-2
+  - Nonane, methyl-
+  - decan
+  - normal-decane
+  - Decane, n-
+  - MFCD00008954
+  - 4-01-00-00464 (Beilstein Handbook Reference)
+  - Decane, analytical standard
+  - Decane; Cactus Normal Paraffin N 10; NSC 8781; n-Decane
+  - CAS-124-18-5
+  - D10
+  - HSDB 63
+  - CCRIS 653
+  - NSC 8781
+  - EINECS 204-686-4
+  - UN2247
+  - BRN 1696981
+  - UNII-NK85062OIY
+  - AI3-24107
+  - Decane, 99%
+  - DECANE [HSDB]
+  - Decane, >=95%
+  - EC 204-686-4
+  - SCHEMBL3073
+  - SCHEMBL8371
+  - SCHEMBL19681
+  - SCHEMBL20870
+  - SCHEMBL50407
+  - SCHEMBL93131
+  - SCHEMBL94049
+  - Decane, anhydrous, >=99%
+  - SCHEMBL101000
+  - SCHEMBL247932
+  - SCHEMBL595180
+  - SCHEMBL595181
+  - SCHEMBL869234
+  - SCHEMBL995957
+  - CHEMBL134537
+  - QSPL 111
+  - SCHEMBL1070124
+  - SCHEMBL1656821
+  - SCHEMBL1694520
+  - SCHEMBL3698446
+  - SCHEMBL3797244
+  - SCHEMBL4141185
+  - SCHEMBL4149284
+  - SCHEMBL5071510
+  - SCHEMBL6859090
+  - SCHEMBL6860211
+  - SCHEMBL6861958
+  - SCHEMBL7736995
+  - SCHEMBL8686058
+  - SCHEMBL8952527
+  - SCHEMBL9113389
+  - SCHEMBL9421489
+  - SCHEMBL9668492
+  - SCHEMBL9669714
+  - SCHEMBL9801248
+  - 'WLN: 10H'
+  - n-C10H22
+  - SCHEMBL11203071
+  - SCHEMBL11855919
+  - SCHEMBL11856154
+  - SCHEMBL11866999
+  - SCHEMBL14686454
+  - SCHEMBL14686494
+  - SCHEMBL18614682
+  - NSC8781
+  - Decane, ReagentPlus(R), >=99%
+  - HY-Y0736
+  - Tox21_201881
+  - Tox21_300336
+  - LMFA11000568
+  - Decane, purum, >=95.0% (GC)
+  - Decane, purum, >=98.0% (GC)
+  - AKOS005145676
+  - MSK3505-1000M
+  - EBC-627093
+  - n-Decane 1000 microg/mL in Methanol
+  - UN 2247
+  - s11595
+  - Decane, SAJ special grade, >=99.0%
+  - NCGC00247996-02
+  - NCGC00254283-01
+  - NCGC00259430-01
+  - 63335-87-5
+  - FD168487
+  - LS-13903
+  - n-Decane [UN2247]  [Flammable liquid]
+  - DB-089700
+  - DB-307803
+  - n-Decane Solution in Methanol, 1000ug/mL
+  - NS00010712
+  - S0554
+  - EN300-19466
+  - F520891
+  - Q150717
+  - F1908-0171
+  - DBF497D1-4529-4457-841E-9D33CDF22B1C
+  - n-Decane, 99%, Thermo Scientific Fisher Cat. 11417776
+  - InChI=1/C10H22/c1-3-5-7-9-10-8-6-4-2/h3-10H2,1-2H
+  - 116372-01-1
+sameAs:
+  ChEMBL: CHEMBL134537
+  pdb.ligand: D10
+  unii: NK85062OIY
+  pubchem.compound: 15600
+  lipidmaps: LMFA11000568
